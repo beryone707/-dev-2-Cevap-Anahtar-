@@ -44,4 +44,38 @@ void main() {
   print('30 kaldırıldıktan sonra liste: $numaralar');
 }
 
+---------------------------------------------------------------------------Sekiller Classı---------------------------------------------------------------------------
+  class Sekil {
+  String ad;
+  int kenarSayisi;
+  double alan;
+  double cevre;
+
+  Sekil(this.ad, this.kenarSayisi, this.alan, this.cevre);
+
+  void bilgiYazdir() {
+    print('Şekil: $ad');
+    print('Kenar Sayısı: $kenarSayisi');
+    print('Alan: $alan');
+    print('Çevre: $cevre');
+    print('----------------------');
+  }
+}
+
+void main() {
+  
+  Sekil kare = Sekil('Kare', 4, 25.0, 20.0);
+  Sekil dikdortgen = Sekil('Dikdörtgen', 4, 40.0, 26.0);
+  Sekil ucgen = Sekil('Üçgen', 3, 30.0, 24.0);
+  Sekil daire = Sekil('Daire', 0, 78.5, 31.4);
+  Sekil besgen = Sekil('Beşgen', 5, 60.0, 35.0);
+
+  kare.bilgiYazdir();
+  dikdortgen.bilgiYazdir();
+  ucgen.bilgiYazdir();
+  daire.bilgiYazdir();
+  besgen.bilgiYazdir();
+}
+
+
   
